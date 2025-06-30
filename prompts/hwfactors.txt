@@ -1,0 +1,19 @@
+Hardware Factors:
+- **Memory Hierarchy** (MH) refers to how hardware organizes and manages different levels of memory, such as L1/L2/L3 cache structures of CPUs and the global/shared memory of NVIDIA GPUs. Memory Hierarchy is crucial for efficient memory access and optimizations like Tiling and Reordering.
+- **Instructions** (INST) are the basic operation units of computation and data movement, such as the RVV instructions in the RISC-V architecture, NEON instructions in the ARM architecture, and CUDA Templates (CuTe) of NVIDIA GPU Tensor Cores. Instructions determine the hardware primitives for tensor operator implementation, and optimization techniques like Vectorization.
+- **Vector/Scalar Registers of CPUs** ((V)R) refers to the number and width of tensor/scalar registers. They are crucial for data movement and computation efficiency in tensor operators, affecting the generation of vector instructions and the granularity of Pipeline optimizations.
+- **Streaming Processor Information of GPUs** (SMs) includes the number of SMs, and the number of CUDA Cores and Tensor Cores within each SM. It determines the grid and block dimension task allocation and data tiling when generating CUDA kernels.
+
+Context:
+{context}
+
+Task:
+Use the extracted context from the hardware manuals, to extract the Hardware factors and generate a report with the same format as the one given in this example:
+
+Example Output:
+Hardware Factors:
+MH: L1 cache: 32KB... 
+INST: vfmacc.vv... 
+VR: 32 128-bit Vector Regs...
+
+In case the context is not sufficient, use your own knowledge of the hardware infrastructure to generate the output, do not output anything else.

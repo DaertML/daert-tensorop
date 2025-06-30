@@ -1,0 +1,13 @@
+Optimization Hints:
+- **Tiling** (T) decomposes a matrix into smaller blocks to improve memory access.
+- **Reordering** (R) exchanges a for-loops to boost memory access efficiency.
+- **Vectorization** (V) packs matrix data to use vector instructions for computation and memory access.
+- **Layout** (L) rearranges matrix data to better fit the hardware’s memory access patterns.
+- **Pipeline** (P) overlaps the computation and memory access to minimize the memory access latency.
+
+Context:
+{context}
+
+Task:
+Use the extracted context from the hardware manuals, to extract the Optimization Hints for the given Hardware platform and generate a report with the details on how to optimize the kernel for all the different types of optimization hints.
+In case the context is not sufficient, use your own knowledge of the hardware infrastructure to generate the output, do not output anything else.

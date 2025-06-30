@@ -1,0 +1,12 @@
+Generate Python scripts for an assembly kernel following the pseudocode given in the kernel sketch.
+• Structure: Index variables + L/C/S
+• Optimization: Pipeline+Vectorization
+
+# Hardware factors:
+{hwfactors}
+
+# Hardware Optimization Hints:
+{hwopthints}
+
+# Kernel Sketch:
+{sketch}

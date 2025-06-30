@@ -1,0 +1,5 @@
+Generate a C code sketch:
+• Structure: For-loops
+• Optimization: Tiling+Reordeing+Layout
+{hwfactors}
+{hwopthints}
