@@ -1,6 +1,8 @@
 # daert-tensorop
 Open source implementation of the QiMeng-TensorOp: https://arxiv.org/pdf/2505.06302
 
+![alt text](image-6.webp "A llama doing gpus go brrr")
+
 # Introduction
 The main idea goes beyond the daertGEMM repo; in this case, any tensor operation is evolved into an optimized kernel.
 
